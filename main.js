@@ -1,9 +1,9 @@
 const button = document.querySelector("button");
 const paragraphAge = document.querySelector("#yourAge");
-let a = new Date();
-const year = a.getFullYear();
-const month = a.getMonth()+1;
-const day = a.getDate();
+const dateNow = new Date();
+const year = dateNow.getFullYear();
+const month = dateNow.getMonth()+1;
+const day = dateNow.getDate();
 
 
 const countYears=()=>{
