@@ -12,18 +12,14 @@ const countYears=()=>{
 	let userBdayYear = userDate.getFullYear();
   	let userBdayMonth = userDate.getMonth()+1;
     	let userBdayDay = userDate.getDate();
-       let userAge = undefined;
+        let userAge = year-userBdayYear;
 
-      if(userBdayMonth < month ||( userBdayMonth == month && userBdayDay >= day)){
+      if(userBdayMonth > month ||( userBdayMonth == month && userBdayDay <= day)){
 
-    		 userAge = year-userBdayYear;
+    		 userAge -= 1;
       
-      }else{
-
-         userAge = year-userBdayYear-1;
-
       }
-            paragraphAge.textContent = `You are ${userAge } years old`;
+            paragraphAge.textContent = `You are ${ userAge } years old`;
 
 
 }
