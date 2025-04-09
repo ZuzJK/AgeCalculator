@@ -14,7 +14,7 @@ const countYears = () => {
     	let userBdayDay = userDate.getDate();
         let userAge = year - userBdayYear - 1;
 
-if (userBdayMonth >= month && userBdayDay => day){
+if (userBdayMonth >= month && userBdayDay >= day){
 
     		 userAge += 1;
       
